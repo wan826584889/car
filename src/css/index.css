@@ -1,0 +1,22 @@
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    background: #000;
+    width: 10rem;
+    text-align: center;
+    padding: 1rem 0 0;
+    border-radius: 1rem;
+    width: 12rem;
+}
+
+.loading img {
+    width: 5rem;
+}
+
+.loading p {
+    color: #aaa;
+    font-size: 3rem;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script>
+        (function() {
+            var designWidth = 750,
+                baseSize = 10;
+            var resize = function() {
+                document.documentElement.style.fontSize = window.innerWidth * baseSize / designWidth + 'px';
+            };
+            (window.onresize = window.onload = resize) && resize();
+        })();
+    </script>
+
+    <title>7.4</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="loading">
+            <img src="./bundle/assets/loading.gif" alt="">
+            <p>加载中...</p>
+        </div>
+    </div>
+    <script src="/dist/build.js"></script>
+</body>
+
+</html>
